@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cream: #F8EBCB;
+    --color-paper: #FFF3D5;
+    --color-dusty-blue: #BDD9D3;
+    --color-olive: #A7A07A;
+    --color-tomato: #D95844;
+    --color-dark-brown: #3F2925;
+  }
+
+  body {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    color: #3F2925;
+    background-color: #F8EBCB;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6, button, .font-heading, .font-header {
+    font-family: 'Gaegu', cursive, sans-serif;
+  }
+
+  .font-hand {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+  }
+}
+
+/* Faded vertical stripes pattern from the reference image */
+.bg-striped-pattern {
+  background-color: #F8EBCB;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #A7A07A 0px,
+    #A7A07A 28px,
+    #BDD9D3 28px,
+    #BDD9D3 56px
+  );
+}
+
+/* Fine-grained paper stripe background option */
+.bg-striped-subtle {
+  background-color: #F8EBCB;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(63, 41, 37, 0.04) 41px,
+    rgba(63, 41, 37, 0.04) 42px
+  );
+}
+
+/* Top red/cream checkered banner border like reference image */
+.top-striped-banner {
+  height: 12px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #D95844,
+    #D95844 10px,
+    #FFF3D5 10px,
+    #FFF3D5 20px
+  );
+  border-bottom: 1.5px solid #3F2925;
+}
+
+/* Wonky, hand-drawn paper card borders */
+.wonky-card {
+  background-color: #FFF3D5;
+  border: 1.5px solid #3F2925;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 4px 0px rgba(63, 41, 37, 0.08);
+}
+
+.wonky-card-alt {
+  background-color: #F8EBCB;
+  border: 1.5px solid #3F2925;
+  border-radius: 12px 245px 15px 225px/225px 15px 255px 12px;
+  box-shadow: 2px 3px 0px rgba(63, 41, 37, 0.06);
+}
+
+/* Organic hand-drawn border utility */
+.hand-border {
+  border: 2px solid #3F2925;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* Sticker photo card style */
+.sticker {
+  transform: rotate(-2deg);
+  border: 3px solid #FFF;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hand-drawn button style */
+.hand-button {
+  font-family: 'Gaegu', cursive, sans-serif;
+  font-weight: 700;
+  border: 1.5px solid #3F2925;
+  background-color: #FFF3D5;
+  color: #3F2925;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 0.4rem 1rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.hand-button:hover, .hand-button:active {
+  background-color: #F8EBCB;
+  transform: translateY(-1px) rotate(-0.5deg);
+}
+
+.hand-button-primary {
+  background-color: #BDD9D3;
+  border: 1.5px solid #3F2925;
+}
+
+.hand-button-primary:hover, .hand-button-primary:active {
+  background-color: #a3cdc5;
+}
+
+.hand-button-accent {
+  background-color: #D95844;
+  color: #FFF3D5;
+  border: 1.5px solid #3F2925;
+}
+
+.hand-button-accent:hover, .hand-button-accent:active {
+  background-color: #c74a37;
+}
+
+/* Washi tape sticker effect */
+.washi-tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 70px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 2px dashed rgba(63, 41, 37, 0.2);
+  border-right: 2px dashed rgba(63, 41, 37, 0.2);
+  opacity: 0.9;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Paper noise texture effect overlay */
+.paper-texture {
+  background-image: radial-gradient(rgba(63, 41, 37, 0.04) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+

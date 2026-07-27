@@ -1,0 +1,6 @@
+{
+  "name": "One Day Wife Trial",
+  "description": "A handmade, interactive digital storybook app for One Day Wife Trial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
