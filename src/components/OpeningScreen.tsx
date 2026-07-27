@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { APP_CONFIG } from '../config';
-import { PhotoSticker } from './PhotoSticker';
 
 interface OpeningScreenProps {
   onContinue: () => void;
@@ -59,15 +58,6 @@ export const OpeningScreen: React.FC<OpeningScreenProps> = ({ onContinue }) => {
         <div className="wonky-card p-5 pt-6 text-center relative z-20">
           {/* Top Washi Tape */}
           <div className="washi-tape" />
-
-          {/* Image 1 Illustration Sticker */}
-          <div className="flex justify-center mb-3">
-            <PhotoSticker
-              photo={APP_CONFIG.photos.funny}
-              width="w-36 sm:w-40"
-              rotate={-1}
-            />
-          </div>
 
           {/* Heading with fixed 'hello,' and smoothly fading nickname */}
           <h1 className="text-2xl sm:text-3xl font-bold font-heading text-[#D95844] mb-3 tracking-wide flex items-center justify-center flex-wrap gap-x-1.5 min-h-[38px]">

@@ -1,6 +1,5 @@
 import React from 'react';
 import { APP_CONFIG } from '../config';
-import { PhotoSticker } from './PhotoSticker';
 
 interface SecretPageProps {
   onBack: () => void;
@@ -20,15 +19,6 @@ export const SecretPage: React.FC<SecretPageProps> = ({ onBack }) => {
       </div>
 
       <div className="w-full max-w-sm my-auto text-center">
-
-        {/* Soft Couple Photo Sticker */}
-        <div className="flex justify-center mb-6">
-          <PhotoSticker
-            photo={APP_CONFIG.photos.coupleSoft}
-            width="w-52"
-            rotate={-2}
-          />
-        </div>
 
         {/* Quiet Paper Note */}
         <div className="bg-[#FFF3D5] border-[1.5px] border-[#3F2925] rounded-2xl p-6 text-left relative shadow-xs mb-6">
